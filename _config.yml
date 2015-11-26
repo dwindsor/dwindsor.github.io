@@ -7,7 +7,7 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            0x4141
+title:            '0x4141'
 tagline:          'Yet another security blog.'
 description:      'Web log for security researcher and Linux hacker David Windsor.'
 url:              http://0x4141.net
