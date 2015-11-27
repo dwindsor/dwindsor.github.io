@@ -99,6 +99,13 @@ a.sidebar-nav-item:focus {
   font-weight: bold;
 }
 
+/* Licensing */
+.sidebar-licensing {
+  display: block;
+  font-size: 0.65rem;
+  line-height: 1.0;
+}
+
 /* Sticky sidebar
  *
  * Add the `sidebar-sticky` class to the sidebar's container to affix it the
