@@ -5,9 +5,9 @@ title: About
 
 ## About Me
 
-My name is David Windsor.  I'm a Linux hacker who became interested in 
+Hi, I'm David Windsor.  I'm a Linux hacker who became interested in 
 programming computers at an early age when I was given my first computer, a 
-[Tandy Color Computer 3](http://www.old-computers.com/museum/computer.asp?c=109).  I've been using Linux since the late 1990's and became active in the open source community in one way or another a few years later.    
+[Tandy Color Computer 3](http://www.old-computers.com/museum/computer.asp?c=109).  I've been using Linux since the late 1990's and became active in open source development a few years later.  I've been involved in the OSS community one way or another since then.    
   
 
 ## Finding Me
@@ -19,7 +19,6 @@ You can find me on the following mailing lists, among others:
  * [freebsd-security](https://lists.freebsd.org/pipermail/freebsd-security/)  
 
   
-
 ## Keys
 
 My [PGP key](https://pgp.mit.edu/pks/lookup?search=dave%400x4141.net&op=index) can be found on various keyservers, but it is listed here for convenience.  
