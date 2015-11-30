@@ -10,7 +10,7 @@ programming computers at an early age when I was given my first computer, a
 [Tandy Color Computer 3](http://www.old-computers.com/museum/computer.asp?c=109).  I've been using Linux since the late 1990's and became active in the open source community in one way or another a few years later.  
 
 ## Finding Me
-----
+
 You can find me on the following mailing lists, among others:
  * [LKML](https://lkml.org)  
  * [kernel-hardening](http://www.openwall.com/lists/kernel-hardening/)  
@@ -18,7 +18,7 @@ You can find me on the following mailing lists, among others:
  * [freebsd-security](https://lists.freebsd.org/pipermail/freebsd-security/)  
 
 ## Keys
-----
+
 My [PGP key](https://pgp.mit.edu/pks/lookup?search=dave%400x4141.net&op=index) can be found on various keyservers, but it is listed here for convenience.  
 
 **PGP Key Fingerprint**   
@@ -27,8 +27,8 @@ E751 7D61 B1CC 0BE2 CB03  29EB 9CC2 C530 3976 EF13
 **PGP Key**  
 >-----BEGIN PGP PUBLIC KEY BLOCK-----  
 Version: GnuPG v1
-
-mQINBFZcE4gBEADf6MTCMfP7jmDCuaAA9I8uMjP3kfXoqmWBl/SMioTx7Zjse4ik
+>
+>mQINBFZcE4gBEADf6MTCMfP7jmDCuaAA9I8uMjP3kfXoqmWBl/SMioTx7Zjse4ik
 FjMe1dkwkHNbgcg59iG5wBDZbzQIBlgrZpYxDMuZZJX6gJN7XOHWUFKESrAMJS8A
 YpCXBOM0twTPE/wmm8DMTtcTJ+F6X3Osdxb1qhV6mnYQEDv4Ys0gZqz5KpTXNDRY
 gy48b5Rohm5ZPicc6xNsgtbx4vtea8zwpdLCOILw3DGkm347CBqj17e4ZgnO2zKC
