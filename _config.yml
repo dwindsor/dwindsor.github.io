@@ -8,8 +8,8 @@ relative_permalinks: true
 
 # Setup
 title:            '0x4141.net'
-tagline:          'Yet another security blog.'
-description:      'Yet another security blog.'
+tagline:          'Yet another OSS blog.'
+description:      'Yet another OSS blog.'
 url:              http://0x4141.net
 baseurl:          /
 
