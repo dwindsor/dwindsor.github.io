@@ -10,9 +10,9 @@ Below are the usual data points that are interesting to prospective CISSPs.
 ---
 ### The Numbers
 
-**Resources Used in Preparation**
-[CISSP All-in-One Exam Guide, 6th Edition](https://www.amazon.com/CISSP-All-One-Guide-Edition/dp/0071781749)
-[Anki Flash Card iOS App](https://ankisrs.net)
+**Resources Used in Preparation**  
+[CISSP All-in-One Exam Guide, 6th Edition](https://www.amazon.com/CISSP-All-One-Guide-Edition/dp/0071781749)  
+[Anki Flash Card iOS App](https://ankisrs.net)  
 
 **The Exam**  
 Date of Exam: 10/16/2015  
