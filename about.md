@@ -21,7 +21,7 @@ You can find me on the following mailing lists, among others:
   
 ## Keys
 
-My [PGP key](https://pgp.mit.edu/pks/lookup?search=dave%400x4141.net&op=index) can be found on various keyservers, but it is listed here for convenience.  
+My [PGP key](https://pgp.mit.edu/pks/lookup?search=dave%40progbits.org&op=index) can be found on various keyservers, but it is listed here for convenience.  
 
 **PGP Key Fingerprint**   
 >E751 7D61 B1CC 0BE2 CB03  29EB 9CC2 C530 3976 EF13  
