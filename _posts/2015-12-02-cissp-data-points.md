@@ -24,4 +24,3 @@ Total Time Used: 96 minutes
 Exam Result: Passed  
 Results Submitted to ISC2: 10/17/2015  
 Credentials Received: 12/02/2015  
-ISC2 Certificate/ID Number: 534416  
