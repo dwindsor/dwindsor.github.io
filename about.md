@@ -18,6 +18,11 @@ You can find me on the following mailing lists, among others:
  * [oss-security](http://www.openwall.com/lists/oss-security/)  
  * [freebsd-security](https://lists.freebsd.org/pipermail/freebsd-security/)  
 
+
+## Certifications  
+**CISSP**  
+Certificate/ID Number: 534416  
+
   
 ## Keys
 
