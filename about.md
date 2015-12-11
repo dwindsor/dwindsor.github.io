@@ -21,7 +21,7 @@ You can find me on the following mailing lists, among others:
 
 ## Certifications  
 **CISSP**  
-Certificate/ID Number: 534416  
+Certificate/ID Number: [534416](https://webportal.isc2.org/custom/certificationverification.aspx)  
 
   
 ## Keys
