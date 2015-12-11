@@ -13,6 +13,7 @@ programming computers at an early age when I was given my first computer, a
 ## Finding Me
 
 You can find me on the following mailing lists, among others:  
+
  * [LKML](https://lkml.org)  
  * [kernel-hardening](http://www.openwall.com/lists/kernel-hardening/)  
  * [oss-security](http://www.openwall.com/lists/oss-security/)  
