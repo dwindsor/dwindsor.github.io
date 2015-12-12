@@ -26,7 +26,7 @@ Certificate/ID Number: [534416](https://webportal.isc2.org/custom/certificationv
   
 ## Keys
 
-My [PGP key](https://pgp.mit.edu/pks/lookup?search=dave%40progbits.org&op=index) can be found on various keyservers, but it is listed here for convenience.  
+My [PGP key](https://pgp.mit.edu/pks/lookup?search=dave%40progbits.org&op=index) can be found on various keyservers and is listed below for convenience.  
 
 **PGP Key Fingerprint**  
 > A01B 6071 5B2B DCC7 F85A  3B50 7123 33BC 98F6 4290
