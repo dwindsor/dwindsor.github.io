@@ -7,15 +7,15 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            '0x414.net'
-tagline:          'Yet another security blog.'
-description:      'Yet another security blog.'
-url:              http://0x4141.net 
+title:            'PROGBITS'
+tagline:          'Yet another OSS blog.'
+description:      'Yet another OSS blog.'
+url:              http://progbits.org
 baseurl:          /
 
 author:
   name:           'David Windsor'
-  url:            http://0x4141.net
+  url:            http://progbits.org
 
 paginate:         5
 
