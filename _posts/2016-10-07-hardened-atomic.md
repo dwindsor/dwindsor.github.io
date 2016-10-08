@@ -2,7 +2,7 @@
 layout: post
 title: Protecting the Linux Kernel Against Overflow with HARDENED_ATOMIC
 ---
-
+# Linux KSPP: HARDENED_ATOMIC Explained
 The Linux Kernel Self Protection Project
 ([KSPP](http://kernsec.org/wiki/index.php/Kernel_Self_Protection_Project)) was
 created with a mandate to eliminate classes of kernel bugs.  To date, this work
@@ -70,10 +70,13 @@ As mentioned above, HARDENED_ATOMIC modifies the `atomic_t` API to provide its
 protections.  Following is a description of the functions that have been
 modified.
 
-First, the type `atomic_wrap_t` needs to be defined for those kernel users who want an atomic type that may be allowed to overflow/wrap (e.g. statistical counters).  Otherwise, the built-in protections (and associated costs) for `atomic_t` would erroneously apply to these non-reference counter users of `atomic_t`.  
+First, the type `atomic_wrap_t` needs to be defined for those kernel users who want an atomic type that may be allowed to overflow/wrap (e.g. statistical counters).  Otherwise, the built-in protections (and associated costs) for `atomic_t` would erroneously apply to these non-reference counter users of `atomic_t`:
+- `include/linux/types.h`: define `atomic_wrap_t` and `atomic64_wrap_t`
+
+Next, we need to define the mechanism for reporting an overflow of a protected atomic type:
+- `kernel/panic.c`: `void hardened_atomic_refcount_overflow(struct pt_regs)`
 
 The following functions are an extension of the `atomic_t` API, supporting this new "wrappable" type:
-
 - `static inline int atomic_read_wrap()`
 - `static inline void atomic_set_wrap()`
 - `static inline void atomic_inc_wrap()`
@@ -81,18 +84,17 @@ The following functions are an extension of the `atomic_t` API, supporting this 
 - `static inline void atomic_add_wrap()`
 - `static inline long atomic_inc_return_wrap()`
 
-**Departures from Original PaX Implementation**
-Discuss REFCOUNT_BIAS change, possible change to use
-`cmpxchg` in `atomic_add()` for x86 to avoid a race
+#### Departures from Original PaX Implementation
+XX: Discuss major departures: REFCOUNT_BIAS change, possible change
+to use `cmpxchg` in `atomic_add()` for x86 to avoid a race
 condition in the overflow case.  
-
-*x86 Race Condition*
 
 ---
 ### Performance Impact
-The performance penalty incurred by HARDENED_ATOMIC is negligible.  The
-following benchmarks were performed in a x86_64 virtual machine with 8 Gb of
+The following benchmarks were performed in a x86_64 virtual machine with 8 GB
 RAM running Ubuntu 16.04.1:
+
+XX: POST BENCHMARK DATA HERE
 
 ---
 ### Bugs Prevented
