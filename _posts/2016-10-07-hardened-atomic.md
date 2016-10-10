@@ -112,6 +112,11 @@ We plan on implementing HARDENED\_ATOMIC on all applicable architectures.
 Below is a table containing the implementation status of HARDENED\_ATOMIC on each
 architecture.  
 
+  First Header | Second Header
+  ------------ | --------------
+  Arm          | No
+  MIPS         | No  
+
 - ARM: No\s\s  
 - MIPS: No\s\s  
 - PowerPC: No\s\s  
