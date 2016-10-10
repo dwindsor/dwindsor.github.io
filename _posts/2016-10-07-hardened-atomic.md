@@ -114,11 +114,8 @@ architecture.
 
   Architecture   |   Supported by KSSP
   ------------   | -----------------
-  Arm            |   No
-  MIPS           |   No  
-
-- ARM: No\s\s  
-- MIPS: No\s\s  
-- PowerPC: No\s\s  
-- SPARC: No\s\s  
-- x86: Yes\s\s
+  Arm  | No
+  MIPS | No  
+  PowerPC | No
+  SPARC | No
+  x86 | Yes
