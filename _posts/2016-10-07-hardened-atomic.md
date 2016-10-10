@@ -42,9 +42,9 @@ redirecting the flow of execution, etc.
 ---
 ### Feature Design
 HARDENED\_ATOMIC provides its protections by modifying the data type used
-in the Linux kernel to implement reference counters: `atomic\\_t`.  `atomic\\_t`
+in the Linux kernel to implement reference counters: `atomic_t`.  `atomic_t`
 is a type that contains an integer type, used for counting.  HARDENED_ATOMIC
-modifies `atomic\_t` and its associated API so that the integer type contained
+modifies `atomic_t` and its associated API so that the integer type contained
 inside of `atomic\_t` cannot be overflowed.     
 
 A key point to remember about HARDENED_ATOMIC is that, once enabled, it protects
