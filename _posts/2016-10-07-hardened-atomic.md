@@ -72,18 +72,21 @@ protections.  Following is a description of the functions that have been
 modified.
 
 First, the type `atomic_wrap_t` needs to be defined for those kernel users who want an atomic type that may be allowed to overflow/wrap (e.g. statistical counters).  Otherwise, the built-in protections (and associated costs) for `atomic_t` would erroneously apply to these non-reference counter users of `atomic_t`:
+
 * `include/linux/types.h`: define `atomic_wrap_t` and `atomic64_wrap_t`
 
 Next, we need to define the mechanism for reporting an overflow of a protected atomic type:
+
 * `kernel/panic.c`: `void hardened_atomic_refcount_overflow(struct pt_regs)`
 
 The following functions are an extension of the `atomic_t` API, supporting this new "wrappable" type:
-* `static inline int atomic_read_wrap()`
-* `static inline void atomic_set_wrap()`
-* `static inline void atomic_inc_wrap()`
-* `static inline void atomic_dec_wrap()`
-* `static inline void atomic_add_wrap()`
-* `static inline long atomic_inc_return_wrap()`
+
+- `static inline int atomic_read_wrap()`
+- `static inline void atomic_set_wrap()`
+- `static inline void atomic_inc_wrap()`
+- `static inline void atomic_dec_wrap()`
+- `static inline void atomic_add_wrap()`
+- `static inline long atomic_inc_return_wrap()`
 
 #### Departures from Original PaX Implementation
 XX: Discuss major departures: REFCOUNT_BIAS change, possible change
