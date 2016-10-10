@@ -2,6 +2,7 @@
 layout: post
 title: Linux KSPP: HARDENED_ATOMIC
 ---
+## Linux KSPP: HARDENED_ATOMIC
 The Linux Kernel Self Protection Project
 ([KSPP](http://kernsec.org/wiki/index.php/Kernel_Self_Protection_Project)) was
 created with a mandate to eliminate classes of kernel bugs.  To date, this work
