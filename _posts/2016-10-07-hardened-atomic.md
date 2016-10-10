@@ -114,8 +114,8 @@ architecture.
 
 |Architecture  | HARDENED\_ATOMIC Supported? |
 |--------------|-----------------------------|
-| ARM          |  No                         |
-| MIPS         |  No                         |
-| PowerPC      |  No                         |
-| SPARC        |  No                         |
-| x86          |  Yes                        |
+| ARM          |  No  |
+| MIPS         |  No  |
+| PowerPC      |  No  |
+| SPARC        |  No  |
+| x86          |  Yes | 
