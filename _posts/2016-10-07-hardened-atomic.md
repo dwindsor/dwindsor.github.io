@@ -1,6 +1,6 @@
 ---
 layout: post
-title:: Linux KSPP: HARDENED_ATOMIC
+title: Linux KSPP: HARDENED_ATOMIC
 ---
 
 The Linux Kernel Self Protection Project
