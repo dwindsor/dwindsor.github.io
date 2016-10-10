@@ -113,9 +113,9 @@ Below is a table containing the implementation status of HARDENED\_ATOMIC on eac
 architecture.  
 
 |Architecture  | HARDENED\_ATOMIC Supported? |
-|--------------|-----------------------------|
+| ------------ | --------------------------- |
 | ARM          |  No  |
 | MIPS         |  No  |
 | PowerPC      |  No  |
 | SPARC        |  No  |
-| x86          |  Yes | 
+| x86          |  Yes |
