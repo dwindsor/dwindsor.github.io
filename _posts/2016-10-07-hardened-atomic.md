@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Linux KSPP: HARDENED_ATOMIC
+title: Linux KSPP: HARDENED\_ATOMIC
 ---
 
-# Linux KSPP: HARDENED_ATOMIC
+# Linux KSPP: HARDENED\_ATOMIC
 The Linux Kernel Self Protection Project
 ([KSPP](http://kernsec.org/wiki/index.php/Kernel_Self_Protection_Project)) was
 created with a mandate to eliminate classes of kernel bugs.  To date, this work
@@ -20,16 +20,16 @@ protects kernel reference counters against overflow.  A team from
 [Intel](http://www.0org.org) graciously decided to collaborate with me and
 finally we've submitted an [RFC](https://lwn.net/Articles/702640/).  
 
-This page will serve as documentation for HARDENED_ATOMIC and will be updated
+This page will serve as documentation for HARDENED\_ATOMIC and will be updated
 as the feature goes through the steps for merging into mainline Linux.  
 
 ---
-### Why do we need HARDENED_ATOMIC?
+### Why do we need HARDENED\_ATOMIC?
 
 #### Use-after-free Bugs
 Rather than targeting individual bugs, KSPP aims to eliminate entire categories
 of vulnerabilities from the Linux kernel.  The class of vulnerabilities
-addressed by HARDENED_ATOMIC is known as use-after-free vulnerabilities.
+addressed by HARDENED\_ATOMIC is known as use-after-free vulnerabilities.
 
 Use-after-free vulnerabilities are aptly named: they are classes of bugs in
 which an attacker is able to gain control of a piece of memory after it has
@@ -43,18 +43,18 @@ redirecting the flow of execution, etc.
 ### Feature Design
 HARDENED\_ATOMIC provides its protections by modifying the data type used
 in the Linux kernel to implement reference counters: `atomic_t`.  `atomic_t`
-is a type that contains an integer type, used for counting.  HARDENED_ATOMIC
+is a type that contains an integer type, used for counting.  HARDENED\_ATOMIC
 modifies `atomic_t` and its associated API so that the integer type contained
 inside of `atomic_t` cannot be overflowed.     
 
-A key point to remember about HARDENED_ATOMIC is that, once enabled, it protects
+A key point to remember about HARDENED\_ATOMIC is that, once enabled, it protects
 all users of `atomic_t` without any additional code changes.  This widespread
 coverage leads to another issue: `atomic_t` is badly misused.  It is used in
 many contexts in which an atomic datatype is not necessarily needed: statistical
 counters, for example.    
 
 #### Detect/Mitigate
-The core mechanism of HARDENED_ATOMIC can be viewed as a bipartite process:
+The core mechanism of HARDENED\_ATOMIC can be viewed as a bipartite process:
 detection of an overflow and mitigating the effects of the overflow, either by
 ignoring it or reversing the operation that caused the overflow.  
 
@@ -62,12 +62,12 @@ Overflow detection is architecture-specific.  Details of the approach
 used to detect overflows on each architecture can be found in the PAX_REFCOUNT
 [documentation](https://forums.grsecurity.net/viewtopic.php?f=7&t=4173#INTERNALS).
 
-Once an overflow has been detected, HARDENED_ATOMIC mitigates the overflow by
+Once an overflow has been detected, HARDENED\_ATOMIC mitigates the overflow by
 either reverting the operation or simply not writing the result of the operation
 to memory.
 
 ### Implementation
-As mentioned above, HARDENED_ATOMIC modifies the `atomic_t` API to provide its
+As mentioned above, HARDENED\_ATOMIC modifies the `atomic_t` API to provide its
 protections.  Following is a description of the functions that have been
 modified.
 
@@ -99,7 +99,7 @@ XX: POST BENCHMARK DATA HERE
 
 ---
 ### Bugs Prevented
-The following vulnerabilities would have been prevented by HARDENED_ATOMIC:
+The following vulnerabilities would have been prevented by HARDENED\_ATOMIC:
 - [CVE-2016-3135](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3135) - Netfilter xt_alloc_table_info integer overflow
 - [CVE-2016-0728](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-0728) - Keyring refcount overflow
 - [CVE-2014-2851](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851) - Group_info refcount overflow
@@ -107,12 +107,12 @@ The following vulnerabilities would have been prevented by HARDENED_ATOMIC:
 
 ---
 ### Future Work
-We plan on implementing HARDENED_ATOMIC on all applicable architectures.  
+We plan on implementing HARDENED\_ATOMIC on all applicable architectures.  
 
-Below is a table containing the implementation status of HARDENED_ATOMIC on each
+Below is a table containing the implementation status of HARDENED\_ATOMIC on each
 architecture.  
 
-Architecture  | HARDENED_ATOMIC Supported?    
+Architecture  | HARDENED\_ATOMIC Supported?    
 --------------|-----------------------------
 ARM           |  No                           
 MIPS          |  No                           
