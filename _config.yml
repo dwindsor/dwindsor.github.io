@@ -1,6 +1,3 @@
-# Dependencies
-highlighter:      rouge
-
 # Permalinks
 permalink:        pretty
 relative_permalinks: false
@@ -18,6 +15,10 @@ author:
 
 # Markdown options
 markdown:         kramdown
+kramdown:
+    input: GFM  # Github Flavored Markdown (fenced code blocks)
+    hard_wrap: false
+highlighter: rouge
 
 paginate:         5
 
