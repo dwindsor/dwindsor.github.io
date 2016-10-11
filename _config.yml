@@ -1,6 +1,5 @@
 # Dependencies
 highlighter:      rouge
-theme:            hyde
 
 # Permalinks
 permalink:        pretty
