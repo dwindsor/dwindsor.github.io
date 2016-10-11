@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Linux KSPP: HARDENED_ATOMIC
+date: 2016-10-07
 ---
 ([KSPP](http://kernsec.org/wiki/index.php/Kernel_Self_Protection_Project)) was
 created with a mandate to eliminate classes of kernel bugs.  To date, this work
