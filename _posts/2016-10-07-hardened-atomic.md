@@ -38,8 +38,6 @@ already been freed and use this memory for nefarious purposes:
 introducing malicious code into the address space of an existing process,
 redirecting the flow of execution, etc.
 
-
----
 ### Feature Design
 HARDENED\_ATOMIC provides its protections by modifying the data type used
 in the Linux kernel to implement reference counters: `atomic_t`.  `atomic_t`
