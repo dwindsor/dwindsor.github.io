@@ -110,8 +110,8 @@ We plan on implementing HARDENED\_ATOMIC on all applicable architectures.
 Below is a table containing the implementation status of HARDENED\_ATOMIC on each
 architecture.  
 
-  Architecture       | Supported       
-|:------------------:| ---------------:|
+  Arch               | Supported       
+| ------------------ | ---------------:|
 | ARM                | No              |
 | MIPS               | No              |
 | PowerPC            | No              |
