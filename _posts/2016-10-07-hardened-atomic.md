@@ -118,6 +118,6 @@ architecture.
 | MIPS               | No              |
 | PowerPC            | No              |
 | SPARC              | No              |
-| x86                | Yes             |
+| x86                | In Progress     |
 |--------------------+-----------------|
 
