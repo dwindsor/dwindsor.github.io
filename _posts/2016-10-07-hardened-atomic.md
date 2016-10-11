@@ -87,15 +87,14 @@ The following functions are an extension of the `atomic_t` API, supporting this 
 - `static inline long atomic_inc_return_wrap()`
 
 #### Departures from Original PaX Implementation
-XX: Discuss major departures: REFCOUNT_BIAS change, possible change
-to use `cmpxchg` in `atomic_add()` for x86 to avoid a race
-condition in the overflow case.  
+While HARDENED_ATOMIC is based largely upon the work done by PaX in their
+original PAX_REFCOUNT patchset, HARDENED_ATOMIC does in fact have a few minor
+differences.  We will be posting them here as final decisions are made regarding
+how certain core protections are implemented.
 
 ### Performance Impact
-The following benchmarks were performed in a x86_64 virtual machine with 8 GB
-RAM running Ubuntu 16.04.1:
-
-XX: POST BENCHMARK DATA HERE
+Preliminary benchmarks indicate HARDENED_ATOMIC incurs negligible performance
+impact.  However, we will be posting definitive benchmarks soon.
 
 ### Bugs Prevented
 The following vulnerabilities would have been prevented by HARDENED\_ATOMIC:  
