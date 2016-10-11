@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Linux KSPP: HARDENED\_ATOMIC
+date: 2016-10-07
 ---
 
 # Linux KSPP: HARDENED\_ATOMIC
