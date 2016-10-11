@@ -11,14 +11,14 @@ created with a mandate to eliminate classes of kernel bugs.  To date, this work
 has largely involved porting features found in
 [PaX](https://pax.grsecurity.net/)/[grsecurity](https://grsecurity.net/) to the
 mainline Linux kernel.  A few such features, like
-[hardened usercopy](https://www.lwn.net), have already been accepted into the
-mainline kernel.  
+[hardened usercopy](https://www.lwn.net/Articles/695991), have already been accepted 
+into the mainline kernel.  
 
 Earlier in 2016 I started [working](https://lwn.net/Articles/668724/) on porting
 PAX_REFCOUNT, a
 [feature](https://forums.grsecurity.net/viewtopic.php?f=7&t=4173) of PaX that
 protects kernel reference counters against overflow.  A team from
-[Intel](http://www.0org.org) graciously decided to collaborate with me and
+[Intel](http://www.01.org) graciously decided to collaborate with me and
 finally we've submitted an [RFC](https://lwn.net/Articles/702640/).  
 
 This page will serve as documentation for HARDENED\_ATOMIC and will be updated
