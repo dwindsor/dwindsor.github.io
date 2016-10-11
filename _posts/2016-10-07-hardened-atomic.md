@@ -120,8 +120,3 @@ architecture.
 | x86                | Yes             |
 |--------------------+-----------------|
 
-    [ ] ARM (in progress)
-    [ ] MIPS
-    [ ] PowerPC
-    [ ] SPARC
-    [x] x86
