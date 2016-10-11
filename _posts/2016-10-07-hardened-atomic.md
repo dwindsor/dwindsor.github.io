@@ -23,7 +23,6 @@ finally we've submitted an [RFC](https://lwn.net/Articles/702640/).
 This page will serve as documentation for HARDENED\_ATOMIC and will be updated
 as the feature goes through the steps for merging into mainline Linux.  
 
----
 ### Why do we need HARDENED\_ATOMIC?
 
 #### Use-after-free Bugs
@@ -93,14 +92,12 @@ XX: Discuss major departures: REFCOUNT_BIAS change, possible change
 to use `cmpxchg` in `atomic_add()` for x86 to avoid a race
 condition in the overflow case.  
 
----
 ### Performance Impact
 The following benchmarks were performed in a x86_64 virtual machine with 8 GB
 RAM running Ubuntu 16.04.1:
 
 XX: POST BENCHMARK DATA HERE
 
----
 ### Bugs Prevented
 The following vulnerabilities would have been prevented by HARDENED\_ATOMIC:
 - [CVE-2016-3135](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3135) - Netfilter xt_alloc_table_info integer overflow
@@ -108,12 +105,17 @@ The following vulnerabilities would have been prevented by HARDENED\_ATOMIC:
 - [CVE-2014-2851](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851) - Group_info refcount overflow
 - [CVE-2010-2959](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2959) - CAN integer overflow vulnerability,
 
----
 ### Future Work
 We plan on implementing HARDENED\_ATOMIC on all applicable architectures.  
 
 Below is a table containing the implementation status of HARDENED\_ATOMIC on each
 architecture.  
+
+- [ ] ARM
+- [ ] MIPS
+- [ ] PowerPC
+- [ ] SPARC
+- [x] x86
 
   Architecture | Supported by KSSP
   ------------ | -----------------
