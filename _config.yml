@@ -1,6 +1,6 @@
 # Dependencies
-highlighter:      pygments
-theme: hyde
+highlighter:      rouge
+theme:            hyde
 
 # Permalinks
 permalink:        pretty
