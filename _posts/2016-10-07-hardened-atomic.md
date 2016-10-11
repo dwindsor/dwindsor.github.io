@@ -38,8 +38,6 @@ already been freed and use this memory for nefarious purposes:
 introducing malicious code into the address space of an existing process,
 redirecting the flow of execution, etc.
 
-
----
 ### Feature Design
 HARDENED\_ATOMIC provides its protections by modifying the data type used
 in the Linux kernel to implement reference counters: `atomic_t`.  `atomic_t`
@@ -101,17 +99,26 @@ XX: POST BENCHMARK DATA HERE
 
 ### Bugs Prevented
 The following vulnerabilities would have been prevented by HARDENED\_ATOMIC:
-- [CVE-2016-3135](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3135) - Netfilter xt_alloc_table_info integer overflow
-- [CVE-2016-0728](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-0728) - Keyring refcount overflow
-- [CVE-2014-2851](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851) - Group_info refcount overflow
-- [CVE-2010-2959](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2959) - CAN integer overflow vulnerability,
+* [CVE-2016-3135](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3135) - Netfilter xt_alloc_table_info integer overflow
+* [CVE-2016-0728](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-0728) - Keyring refcount overflow
+* [CVE-2014-2851](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851) - Group_info refcount overflow
+* [CVE-2010-2959](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2959) - CAN integer overflow vulnerability,
 
 ### Future Work
 We plan on implementing HARDENED\_ATOMIC on all applicable architectures.  
 
 Below is a table containing the implementation status of HARDENED\_ATOMIC on each
-architecture.  
-
+architecture. 
+ 
+|--------------------+-----------------|
+|  Arch              | Supported       |
+|:-------------------+----------------:|
+| ARM                | No              |
+| MIPS               | No              |
+| PowerPC            | No              |
+| SPARC              | No              |
+| x86                | Yes             |
+|--------------------+-----------------|
     [ ] ARM (in progress)
     [ ] MIPS
     [ ] PowerPC
