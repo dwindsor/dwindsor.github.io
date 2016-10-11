@@ -16,10 +16,8 @@ author:
   name:           'David Windsor'
   url:            http://progbits.org
 
-markdown:         redcarpet
-markdown_ext:     markdown,mkdown,mkdn,mkd,md
-redcarpet:
-    extensions: ["no_intra_emphasis", "tables", "autolink", "with_toc_data"]  
+# Markdown options
+markdown:         kramdown
 
 paginate:         5
 
