@@ -75,7 +75,7 @@ First, the type `atomic_wrap_t` needs to be defined for those kernel users who w
 
 Next, we need to define the mechanism for reporting an overflow of a protected atomic type:
 
-* `kernel/panic.c`: `void hardened_atomic_refcount_overflow(struct pt_regs)`
+* `kernel/panic.c`: `void hardened_atomic_overflow(struct pt_regs)`
 
 The following functions are an extension of the `atomic_t` API, supporting this new "wrappable" type:
 
