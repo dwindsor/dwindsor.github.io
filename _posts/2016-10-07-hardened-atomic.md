@@ -46,10 +46,12 @@ modifies `atomic_t` and its associated API so that the integer type contained
 inside of `atomic_t` cannot be overflowed.     
 
 A key point to remember about HARDENED\_ATOMIC is that, once enabled, it protects
-all users of `atomic_t` without any additional code changes.  This widespread
-coverage leads to another issue: `atomic_t` is badly misused.  It is used in
-many contexts in which an atomic datatype is not necessarily needed: statistical
-counters, for example.    
+all users of `atomic_t` without any additional code changes. The protection
+provided by HARDENED\_ATOMIC is not "opt-in": since `atomic_t` is so widely
+misused, it must be protected as-is.  HARDENED\_ATOMIC protects all users
+of `atomic_t` and `atomic_long_t` against overflow.  New users wishing to use
+atomic types, but not needing protection against overflows, should use the
+new types introduced by this series: `atomic_wrap_t` and `atomic_long_wrap_t`.
 
 #### Detect/Mitigate
 The core mechanism of HARDENED\_ATOMIC can be viewed as a bipartite process:
