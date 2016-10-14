@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/dwindsor
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://progbits.org
+  * I am dwindsor (https://keybase.io/dwindsor) on keybase.
+  * I have a public key with fingerprint 32C4 7589 726C 5701 41D9  6531 B224 6C6E AF2F C22D
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01013754a5519ff8b75c0f03301c67f0a72a76b9a48fc37804cd4bc1037db73209380a",
+            "fingerprint": "32c47589726c570141d96531b2246c6eaf2fc22d",
+            "host": "keybase.io",
+            "key_id": "b2246c6eaf2fc22d",
+            "kid": "01013754a5519ff8b75c0f03301c67f0a72a76b9a48fc37804cd4bc1037db73209380a",
+            "uid": "e76ad5d841e4464ea1351a290a7b6219",
+            "username": "dwindsor"
+        },
+        "service": {
+            "hostname": "progbits.org",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1476457713,
+    "expire_in": 157680000,
+    "prev": "41e69d80fc8810405f7b90abe532bdfce37540f3e17d58740c6d7cfd52b4fa12",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMInAnicrZJbSBVBGMePdtHUrGMUQmSxRD2kNrO32T2oZEEJIlGBFgTH3dnZ43I8
+u+fsrlqavUTlgwkGpaHSBRLsgkohCEUWEkRBGoV4z8SuQmn24oM1K/bWY/MyzDf/
+/++78PWvX+VLivs6Xr0hPORviXv5tKnCd9y3MFfDqJZ2mgnUMGGyfJFyjThuMGxo
+TIABEEAOCbwiCFDWdUlFAgY64DgAsYh0oCBWQaIqK7ykYw5JgMcar2IIOKSpiGOB
+zElAYTIZ3TBDxI7ahulSLMdiHgmSjFgRCwhAHmqyKHBQZVlexCJRdFbHLKtRY5nl
+eA5anKo4JNuwaIw+gsvl/UP/n+uuWMYRJCqaoEk8JDwv8kSBnAAVVqYcVWSh7Akd
+YptKhFC1VmWYmmPZTG0mQ6OVBibeYL1OVhRR2wqphutkW3aIeunTtbBVTn/KXDfq
+BDynezrqSauIGlyBBFXKpXOkjkpiO4ZlMgFIldg1PCrkkcgLCEEukyGnooZNgoan
+EJAoAXq8PKSSImkXoqxJQMeSBAEPBB2ptBWVCByrajom3uSAzhGINEFCPMCihrCu
+CazK6wpkGa+tmGkxAZrJVUIU6RghU3ErbMLUPus7udoXl+Rbuybe2y9f0rqNf7fu
++3TCUlZ3z/bimP9X+omqvlboj/XOuKV7vzSjA+erR7sNX6GcFks886O3sejzWMJQ
+T25xamJenX+wpFmajNy/2X1qKDm5JDW+C8cK133KfNh2p7JofqYg+167lHbkey4T
+9/Zw9e5dwMxofRPe2BgZqOoeS5rusofrB4fftxTuK7jSNlYw8ujJnq3+efbspqtT
+LRmb684FoTUSvnBj9876xx/zFhs6O173TixNDaaEHxgtYx3fPprj194FHqffy89v
+bh9fvPjs1kz8/p9TDR0dIylgRJ6d0Z8fOjY72tk/kJ9n7siK5M41pU9Gtn3OOfo0
+YSLndvurSy8WDm75cDev6/LvUu76Hz9YRMY=
+=iUUg
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dwindsor
+
+==================================================================
+
