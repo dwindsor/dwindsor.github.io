@@ -113,7 +113,8 @@ architecture.
 |--------------------+-----------------|
 |  Arch              | Supported       |
 |:-------------------+----------------:|
-| ARM                | No              |
+| arm                | In Progress     |
+| arm64              | In Progress     |
 | MIPS               | No              |
 | PowerPC            | No              |
 | SPARC              | No              |
