@@ -126,9 +126,9 @@ impact.  However, we will be posting definitive benchmarks soon.
 ### Bugs Prevented
 The following vulnerabilities would have been prevented by `HARDENED_ATOMIC`:  
 
-* [CVE-2016-3135](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3135) - Netfilter xt_alloc_table_info integer overflow
+* [CVE-2016-3135](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-3135) - Netfilter `xt_alloc_table_info` integer overflow
 * [CVE-2016-0728](https://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2016-0728) - Keyring refcount overflow
-* [CVE-2014-2851](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851) - Group_info refcount overflow
+* [CVE-2014-2851](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-2851) - `group_info` refcount overflow
 * [CVE-2010-2959](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-2959) - CAN integer overflow vulnerability,
 
 ### Future Work
