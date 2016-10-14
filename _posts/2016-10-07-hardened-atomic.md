@@ -97,7 +97,7 @@ how certain core protections are implemented.
 ##### x86 Race Condition
 In the original implementation of `PAX_REFCOUNT`, a
 [known race condition](https://forums.grsecurity.net/viewtopic.php?f=7&t=4173#APPENDA)
-existed when performing atomic add operations.  The crux of the problem lies in
+exists when performing atomic add operations.  The crux of the problem lies in
 the fact that, on x86, the "detect" portion of `PAX_REFCOUNT`'s detect/mitigate
 mechanism actually needs to perform a prospective operation in order to determinine if
 that operation produces an overflow.  In other words, the original `PAX_REFCOUNT`
@@ -116,7 +116,7 @@ increments to the counter will not be detected by the processor's overflow detec
 mechanism.
 
 The likelihood of an attacker being able to exploit this race was sufficiently
-insignificant such that `PAX_REFCOUNT`'s authors thought that fixing the race would be
+insignificant such that `PAX_REFCOUNT`'s authors thought fixing the race would be
 counterproductive.
 
 ### Performance Impact
