@@ -94,6 +94,31 @@ original PAX_REFCOUNT patchset, HARDENED_ATOMIC does in fact have a few minor
 differences.  We will be posting them here as final decisions are made regarding
 how certain core protections are implemented.
 
+##### x86 Race Condition
+In the original implementation of PAX_REFCOUNT, a
+[known race condition](https://forums.grsecurity.net/viewtopic.php?f=7&t=4173#APPENDA)
+existed when performing atomic add operations.  The crux of the problem lies in
+the fact that, on x86, the "detect" portion of PAX_REFCOUNT's detect/mitigate
+mechanism actually needs to perform a prospective operation in order to determinine if
+that operation produces an overflow.  In other words, the original PAX_REFCOUNT
+implementation provided no way to determine a priori whether a prospective atomic
+operation will result in an overflow.
+
+Therefore, there exists a set of conditions in which, given the correct timing of
+threads, an overflowed counter could be visible to a processor.  If multiple
+threads execute in such a way so that one thread overflows the counter with an
+addition operation, while a second thread executes another addition operation on
+the same counter before the first thread is able to revert the previously executed
+addition operation (by executing a subtraction operation of the same (or greater)
+magnitude), the counter will have been incremented to a value greater than `INT_MAX`.
+At this point, the protection provided by PAX_REFCOUNT has been bypassed, as further
+increments to the counter will not be detected by the processor's overflow detection
+mechanism.
+
+The likelihood of an attacker being able to exploit this race was sufficiently
+insignificant such that PAX_REFCOUNT's authors thought that fixing the race would be
+counterproductive.
+
 ### Performance Impact
 Preliminary benchmarks indicate HARDENED_ATOMIC incurs negligible performance
 impact.  However, we will be posting definitive benchmarks soon.
