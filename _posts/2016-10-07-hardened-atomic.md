@@ -33,10 +33,9 @@ addressed by `HARDENED_ATOMIC` is known as use-after-free vulnerabilities.
 
 Use-after-free vulnerabilities are aptly named: they are classes of bugs in
 which an attacker is able to gain control of a piece of memory after it has
-already been freed and use this memory for nefarious purposes:
-(XX: link to examples here)
-introducing malicious code into the address space of an existing process,
-redirecting the flow of execution, etc.
+already been freed and use this memory for nefarious purposes: introducing 
+malicious code into the address space of an existing process, redirecting the
+flow of execution, etc.
 
 ### Feature Design
 `HARDENED_ATOMIC` provides its protections by modifying the data type used
