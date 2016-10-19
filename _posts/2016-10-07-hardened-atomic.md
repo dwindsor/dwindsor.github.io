@@ -2,6 +2,7 @@
 layout: post
 title: Linux KSPP - HARDENED_ATOMIC
 date: 2016-10-07
+permalink: hardened-atomic
 ---
 
 The Linux Kernel Self Protection Project
